@@ -30,11 +30,6 @@ export class HomeComponent implements OnInit{
   ngOnInit(): void {
     this.getAllProducts();
   }
-
-
-
-
-
   public getAllProducts(searchKey:string="") {
     this.productService.getAllProducts(this.pageNumber,searchKey)
     .pipe(
