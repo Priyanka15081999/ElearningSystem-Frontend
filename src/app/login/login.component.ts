@@ -41,35 +41,9 @@ export class LoginComponent implements OnInit {
         const role = response.user.role[0].roleName;
 
         
-        if (role === 'Admin') {
-       
-        // Swal.fire({
-        //   title: 'Admin Login Successful',
-        //   icon: 'success',
-        //   showClass: {
-        //     popup: 'animate__animated animate__fadeInDown'
-
-        //   },
-        //   hideClass: {
-        //     popup: 'animate__animated animate__fadeOutUp'
-        //   }
-        // })
-          
-        this.router.navigate(['']);
-      
+        if (role === 'Admin') {          
+             this.router.navigate(['']);     
         } else {
-          //           Swal.fire({
-          //   title: 'Login Successful',
-          //   icon: 'success',
-          //   showClass: {
-          //     popup: 'animate__animated animate__fadeInDown'
-
-          //   },
-          //   hideClass: {
-          //     popup: 'animate__animated animate__fadeOutUp'
-          //   }
-          // })
-            
           this.router.navigate(['']);
         }
       },
